@@ -1,5 +1,7 @@
 #pragma once
 #include<vector>
+#include<string>
+#include<iostream>
 using namespace std;
 class Stack {
 public:
@@ -9,6 +11,17 @@ public:
 
 	bool empty();
 	bool full();
+
+	bool find(const string &elem);
+	int count(const string &elem);
+
+	//void setMaxSize(const int &max_size) {
+	//	_stack.max_size = max_size;
+	//}
+
+	int maxSize() {
+		return _stack.max_size();
+	}
 
 	int size() { return _stack.size(); }
 private:
