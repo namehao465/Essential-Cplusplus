@@ -9,10 +9,11 @@ void fill_stack(Stack &stack,ostream &os = cout, istream &is = cin);
 void test_Stack();
 void test_Triangular();
 void test_Matrix();
+int sum(Triangular &trian);
 int main() {
 	//test_Stack();
-	//test_Triangular();
-	test_Matrix();
+	test_Triangular();
+	//test_Matrix();
 	system("pause");
 	return 0;
 }
@@ -26,6 +27,10 @@ void test_Matrix() {
 
 void test_Triangular() {
 	Triangular t5();
+}
+
+int sum(Triangular &trian) {
+	int 
 }
 
 void test_Stack() {
